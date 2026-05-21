@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — страница не найдена</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--404">
+
+  <header class="header header--simple">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo logo">
+        <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+
+      <button class="header__burger burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="products.html" class="nav__link">Категории</a></li>
+          <li class="nav__item"><a href="account.html" class="nav__link">Кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="error-page">
+    <div class="error-page__inner container">
+      <img src="images/cat-logo.jpg" alt="МойБюджет" class="error-page__logo logo__img">
+      <div class="error-page__icon">404</div>
+      <h1 class="error-page__title">Страница не существует</h1>
+      <p class="error-page__text">Похоже, ты перешёл по неверной ссылке. Проверь адрес или вернись на главную.</p>
+      <a href="index.html" class="error-page__btn btn btn--primary">Вернуться на главную</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

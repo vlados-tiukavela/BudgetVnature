@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МойБюджет — учёт доходов и расходов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--index">
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo logo">
+        <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+
+      <button class="header__burger burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+          <li class="nav__item"><a href="products.html" class="nav__link">Категории</a></li>
+          <li class="nav__item"><a href="account.html" class="nav__link">Личный кабинет</a></li>
+          <li class="nav__item"><a href="registration.html" class="nav__link nav__link--btn">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- баннер-слайдер -->
+    <section class="hero">
+      <div class="hero__slider slider">
+        <div class="slider__track">
+          <div class="slider__slide slider__slide--active">
+            <div class="slider__content container">
+              <h1 class="slider__title">Контролируй свои финансы</h1>
+              <p class="slider__text">Записывай доходы и расходы в пару кликов — всё в одном месте</p>
+              <a href="registration.html" class="slider__btn btn btn--primary">Начать бесплатно</a>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__content container">
+              <h1 class="slider__title">Смотри статистику</h1>
+              <p class="slider__text">Графики покажут, куда уходят деньги каждый месяц</p>
+              <a href="account.html" class="slider__btn btn btn--primary">В кабинет</a>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <div class="slider__content container">
+              <h1 class="slider__title">Планируй бюджет</h1>
+              <p class="slider__text">Ставь лимиты по категориям и не выходи за рамки</p>
+              <a href="products.html" class="slider__btn btn btn--primary">Категории</a>
+            </div>
+          </div>
+        </div>
+        <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Назад">‹</button>
+        <button class="slider__arrow slider__arrow--next" type="button" aria-label="Вперёд">›</button>
+        <div class="slider__dots"></div>
+      </div>
+    </section>
+
+    <!-- возможности -->
+    <section class="features section">
+      <div class="container">
+        <h2 class="section__title">Что умеет сервис</h2>
+        <div class="features__grid">
+          <article class="features__card feature-card">
+            <div class="feature-card__icon">+</div>
+            <h3 class="feature-card__title">Доходы</h3>
+            <p class="feature-card__text">Добавляй зарплату, подработки и любые поступления</p>
+          </article>
+          <article class="features__card feature-card">
+            <div class="feature-card__icon">-</div>
+            <h3 class="feature-card__title">Расходы</h3>
+            <p class="feature-card__text">Фиксируй покупки по категориям: еда, транспорт, развлечения</p>
+          </article>
+          <article class="features__card feature-card">
+            <div class="feature-card__icon">%</div>
+            <h3 class="feature-card__title">Графики</h3>
+            <p class="feature-card__text">Наглядная статистика за неделю, месяц и год</p>
+          </article>
+          <article class="features__card feature-card">
+            <div class="feature-card__icon">!</div>
+            <h3 class="feature-card__title">Напоминания</h3>
+            <p class="feature-card__text">Не забудь записать регулярные платежи</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- о нас -->
+    <section class="about section section--gray">
+      <div class="container about__inner">
+        <div class="about__text">
+          <h2 class="section__title">О нас</h2>
+          <p>«МойБюджет» — онлайн-сервис для учёта личных финансов. Записывай доходы и расходы, смотри статистику по категориям и планируй бюджет на месяц вперёд.</p>
+          <p>Мы сделали интерфейс простым и понятным: всё нужное на одном экране, без сложных таблиц. Регистрация бесплатная, а история операций всегда под рукой в личном кабинете.</p>
+          <button class="about__btn btn btn--outline" type="button" data-modal="about-modal">Подробнее</button>
+        </div>
+        <div class="about__img">
+          <img src="images/about.jpg" alt="Иллюстрация учёта бюджета" width="480" height="320">
+        </div>
+      </div>
+    </section>
+
+    <!-- преимущества -->
+    <section class="advantages section">
+      <div class="container">
+        <h2 class="section__title">Почему удобно</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantage">
+            <span class="advantage__num">01</span>
+            <h3 class="advantage__title">Бесплатно</h3>
+            <p class="advantage__text">Базовый функционал доступен без подписки</p>
+          </li>
+          <li class="advantages__item advantage">
+            <span class="advantage__num">02</span>
+            <h3 class="advantage__title">Быстро</h3>
+            <p class="advantage__text">Запись операции занимает меньше 10 секунд</p>
+          </li>
+          <li class="advantages__item advantage">
+            <span class="advantage__num">03</span>
+            <h3 class="advantage__title">Наглядно</h3>
+            <p class="advantage__text">Круговая диаграмма расходов в личном кабинете</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- отзывы -->
+    <section class="reviews section section--gray">
+      <div class="container">
+        <h2 class="section__title">Отзывы пользователей</h2>
+        <div class="reviews__grid">
+          <blockquote class="reviews__card review">
+            <p class="review__text">«Наконец вижу, сколько трачу на кофе за месяц. Страшно, но полезно!»</p>
+            <footer class="review__author">— Анна, 24 года</footer>
+          </blockquote>
+          <blockquote class="reviews__card review">
+            <p class="review__text">«Пользуюсь для семейного бюджета. Жена тоже добавляет расходы.»</p>
+            <footer class="review__author">— Игорь, 34 года</footer>
+          </blockquote>
+          <blockquote class="reviews__card review">
+            <p class="review__text">«Графики понятные, сразу видно куда уходят деньги. Пользуюсь каждый день.»</p>
+            <footer class="review__author">— Максим, менеджер</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo logo">
+          <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img logo__img--footer">
+          <span class="logo__text">МойБюджет</span>
+        </a>
+        <p class="footer__copy">© 2026 МойБюджет. Все права защищены.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты</h4>
+        <p>Email: <a href="mailto:budget@example.ru" class="footer__link">budget@example.ru</a></p>
+        <p>Тел: +7 (900) 123-45-67</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Соцсети</h4>
+        <ul class="footer__social social">
+          <li class="social__item"><a href="#" class="social__link">VK</a></li>
+          <li class="social__item"><a href="#" class="social__link">TG</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- модалка о проекте -->
+  <div class="modal" id="about-modal" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <h3 class="modal__title">О сервисе МойБюджет</h3>
+      <p>Мы помогаем контролировать личные финансы: фиксировать траты, видеть баланс и не выходить за лимиты по категориям. Сервис подойдёт и для семейного бюджета, и для личных целей.</p>
+      <p>В личном кабинете доступны профиль, история операций, категории расходов и наглядная статистика. Новые функции мы добавляем по отзывам пользователей.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
