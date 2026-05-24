@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация — МойБюджет</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--registration">
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo logo">
+        <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+      <button class="header__burger burger" type="button" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="account.html" class="nav__link">Кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main--center">
+    <section class="auth">
+      <div class="auth__box">
+        <h1 class="auth__title">Регистрация</h1>
+
+        <form class="auth__form form" id="reg-form">
+          <label class="form__label" for="username">Имя пользователя</label>
+          <input class="form__input" type="text" id="username">
+          <span class="form__error" id="err-username"></span>
+
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email">
+          <span class="form__error" id="err-email"></span>
+
+          <label class="form__label" for="password">Пароль</label>
+          <input class="form__input" type="password" id="password">
+          <span class="form__error" id="err-password"></span>
+
+          <label class="form__label" for="password2">Повтор пароля</label>
+          <input class="form__input" type="password" id="password2">
+          <span class="form__error" id="err-password2"></span>
+
+          <label class="form__checkbox">
+            <input type="checkbox" id="agree">
+            Согласен с условиями
+          </label>
+          <span class="form__error" id="err-agree"></span>
+
+          <button type="submit" class="btn btn--primary btn--block">Зарегистрироваться</button>
+        </form>
+
+        <p class="auth__footer">Есть аккаунт? <a href="account.html">Войти</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--mini">
+    <div class="container footer--mini__inner">
+      <p class="footer__copy">© 2026 МойБюджет</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>

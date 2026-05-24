@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МойБюджет — учёт доходов и расходов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--index">
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo logo">
+        <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+
+      <button class="header__burger burger" type="button" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+          <li class="nav__item"><a href="products.html" class="nav__link">Категории</a></li>
+          <li class="nav__item"><a href="account.html" class="nav__link">Личный кабинет</a></li>
+          <li class="nav__item"><a href="registration.html" class="nav__link nav__link--btn">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="baner">
+      <div class="container baner__blok">
+        <h1 class="baner__zagolovok">Контролируй свои финансы</h1>
+        <p class="baner__tekst">Записывай доходы и расходы — всё в одном месте</p>
+        <a href="registration.html" class="baner__ssylka btn btn--primary">Начать бесплатно</a>
+      </div>
+    </section>
+
+    <section class="features section">
+      <div class="container">
+        <h2 class="section__title">Что умеет сервис</h2>
+        <ul class="features__list">
+          <li class="features__item feature-card">
+            <h3 class="feature-card__title">Доходы</h3>
+            <p class="feature-card__text">Зарплата, подработки и другие поступления</p>
+          </li>
+          <li class="features__item feature-card">
+            <h3 class="feature-card__title">Расходы</h3>
+            <p class="feature-card__text">Покупки по категориям: еда, транспорт и т.д.</p>
+          </li>
+          <li class="features__item feature-card">
+            <h3 class="feature-card__title">Статистика</h3>
+            <p class="feature-card__text">Смотри сколько потратил за месяц</p>
+          </li>
+          <li class="features__item feature-card">
+            <h3 class="feature-card__title">Категории</h3>
+            <p class="feature-card__text">Удобные группы для учёта трат</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about section section--gray">
+      <div class="container about__inner">
+        <div class="about__text">
+          <h2 class="section__title">О нас</h2>
+          <p>«МойБюджет» — сервис для учёта личных финансов. Записывай доходы и расходы, смотри статистику по категориям.</p>
+          <p>Интерфейс простой: всё нужное на одном экране. Регистрация бесплатная, история операций в личном кабинете.</p>
+        </div>
+        <div class="about__img">
+          <img src="images/about.jpg" alt="Учёт бюджета" width="480" height="320">
+        </div>
+      </div>
+    </section>
+
+    <section class="preimu section">
+      <div class="container">
+        <h2 class="section__title">Почему удобно</h2>
+        <ul class="preimu__spisok">
+          <li class="preimu__element">
+            <h3 class="preimu__nazvanie">Бесплатно</h3>
+            <p class="preimu__tekst">Основные функции без оплаты</p>
+          </li>
+          <li class="preimu__element">
+            <h3 class="preimu__nazvanie">Быстро</h3>
+            <p class="preimu__tekst">Запись операции за пару секунд</p>
+          </li>
+          <li class="preimu__element">
+            <h3 class="preimu__nazvanie">Понятно</h3>
+            <p class="preimu__tekst">Таблица и цифры в кабинете</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews section section--gray">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item review">
+            <p class="review__text">Вижу сколько трачу на кофе за месяц. Полезно.</p>
+            <p class="review__author">Анна, 24 года</p>
+          </li>
+          <li class="reviews__item review">
+            <p class="review__text">Ведём семейный бюджет вдвоём с женой.</p>
+            <p class="review__author">Игорь, 34 года</p>
+          </li>
+          <li class="reviews__item review">
+            <p class="review__text">Проще чем таблица в Excel.</p>
+            <p class="review__author">Максим, менеджер</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo logo">
+          <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img logo__img--footer">
+          <span class="logo__text">МойБюджет</span>
+        </a>
+        <p class="footer__copy">© 2026 МойБюджет</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты</h4>
+        <p>Email: <a href="mailto:budget@example.ru" class="footer__link">budget@example.ru</a></p>
+        <p>Тел: +7 (900) 123-45-67</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категории — МойБюджет</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--products">
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo logo">
+        <img src="images/cat-logo.jpg" alt="МойБюджет" class="logo__img">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+      <button class="header__burger burger" type="button" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="account.html" class="nav__link">Кабинет</a></li>
+          <li class="nav__item"><a href="registration.html" class="nav__link nav__link--btn">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Категории бюджета</h1>
+      <p class="page-desc">Список категорий для учёта доходов и расходов</p>
+
+      <div class="catalog__filter filter">
+        <input type="text" id="search-categories" class="filter__search" placeholder="Поиск...">
+        <select id="filter-type" class="filter__select">
+          <option value="all">Все</option>
+          <option value="expense">Расходы</option>
+          <option value="income">Доходы</option>
+        </select>
+      </div>
+
+      <ul class="catalog__list" id="categories-grid">
+        <li class="catalog__item product-card" data-type="expense" data-name="продукты">
+          <img class="product-card__img" src="images/cat-food.jpg" alt="Продукты">
+          <h2 class="product-card__title">Продукты</h2>
+          <p class="product-card__desc">Еда и напитки из магазина</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="expense" data-name="транспорт">
+          <img class="product-card__img" src="images/cat-transport.jpg" alt="Транспорт">
+          <h2 class="product-card__title">Транспорт</h2>
+          <p class="product-card__desc">Метро, такси, бензин</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="expense" data-name="развлечения">
+          <img class="product-card__img" src="images/cat-fun.jpg" alt="Развлечения">
+          <h2 class="product-card__title">Развлечения</h2>
+          <p class="product-card__desc">Кино, игры, кафе</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="expense" data-name="жильё">
+          <img class="product-card__img" src="images/cat-home.jpg" alt="Жильё">
+          <h2 class="product-card__title">Жильё</h2>
+          <p class="product-card__desc">Аренда, коммуналка</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="expense" data-name="здоровье">
+          <img class="product-card__img" src="images/cat-health.jpg" alt="Здоровье">
+          <h2 class="product-card__title">Здоровье</h2>
+          <p class="product-card__desc">Аптека, врачи</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="income" data-name="зарплата">
+          <img class="product-card__img" src="images/cat-salary.jpg" alt="Зарплата">
+          <h2 class="product-card__title">Зарплата</h2>
+          <p class="product-card__desc">Доход с работы</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="income" data-name="подработка">
+          <img class="product-card__img" src="images/cat-extra.jpg" alt="Подработка">
+          <h2 class="product-card__title">Подработка</h2>
+          <p class="product-card__desc">Фриланс, подработки</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+        <li class="catalog__item product-card" data-type="expense" data-name="одежда">
+          <img class="product-card__img" src="images/cat-clothes.jpg" alt="Одежда">
+          <h2 class="product-card__title">Одежда</h2>
+          <p class="product-card__desc">Одежда и обувь</p>
+          <a href="account.html" class="product-card__link btn btn--outline">Подробнее</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer footer--mini">
+    <div class="container footer--mini__inner">
+      <a href="index.html" class="footer__logo logo">
+        <img src="images/cat-logo.jpg" alt="" class="logo__img logo__img--footer">
+        <span class="logo__text">МойБюджет</span>
+      </a>
+      <p class="footer__copy">© 2026 МойБюджет</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
